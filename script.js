@@ -1,8 +1,9 @@
-const body = document.querySelector('body'); 
-const button = document.querySelector('button'); 
-const wordContainer = document.querySelector('.word-container'); 
-const word = document.createElement('h1'); 
-const definition = document.createElement('p'); 
+const token = config.MY_API_TOKEN;
+let body = document.querySelector('body'); 
+let button = document.querySelector('button'); 
+let wordContainer = document.querySelector('.word-container'); 
+let word = document.createElement('h1'); 
+let definition = document.createElement('p'); 
 body.appendChild(wordContainer); 
 wordContainer.appendChild(word); 
 wordContainer.appendChild(definition); 
@@ -30,7 +31,7 @@ let randomWord = () => {
 }
 
 const randomDefinition = (word) => {
-    fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=7f9c78e6-b668-4896-bc21-7d2a4ea99861`)
+    fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=${token}`)
     .then(response => {
         return response.json(); 
     })

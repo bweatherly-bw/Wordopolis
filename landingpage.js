@@ -1,7 +1,7 @@
 let enterPage = u(document.getElementById('enter_button'));
-enterPage.text('ENTER');
+enterPage.text('LAUNCH');
 
 let title = u(document.querySelector('h1'));
-title.text('Dictionary Application');
+title.text('WORDOPOLIS');
 
 

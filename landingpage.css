@@ -1,0 +1,92 @@
+:root {
+    --layer1: #DDDDDD;
+    --layer2: #125D98;
+    --layer3: #3C8DAD;
+    --layer4: #F5A962;
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 24;  
+}
+
+#enter_button {
+    margin: auto;
+    width: 50%;
+    background-color: var(--layer1);
+  
+}
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center; 
+    text-align: center;
+    background-image: url("Images/blue-snow.png");
+  }
+  
+  img {
+    margin-left: 15%;
+    margin-top: -50px;
+  }
+
+  h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    color: var(--layer4);
+  }
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  h1::before {
+    background: #e4f4fc;
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  h1::after {
+    width: 0.125em;
+    background: var(--layer1);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  #enter_button {
+    color: var(--layer1);
+    background-color: var(--layer3);
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

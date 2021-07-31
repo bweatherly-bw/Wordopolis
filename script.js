@@ -33,7 +33,7 @@ let randomWord = () => {
 }
 
 const randomDefinition = (word) => {
-    fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key='7f9c78e6-b668-4896-bc21-7d2a4ea99861'`)
+    fetch(`https://www.dictionaryapi.com/api/v3/references/collegiate/json/${word.textContent}?key=7f9c78e6-b668-4896-bc21-7d2a4ea99861`)
     .then(response => {
         return response.json(); 
     })

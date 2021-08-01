@@ -3,6 +3,7 @@
     --layer2: #125D98;
     --layer3: #3C8DAD;
     --layer4: #F5A962;
+    --layer5: #28f39b;
     --bg-color: hsl(49 37% 94%);
     --typewriterSpeed: 6s;
     --typewriterCharacters: 24;  
@@ -43,7 +44,7 @@ footer {
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
-    color: var(--layer4);
+    color: var(--layer5);
   }
   h1::before,
   h1::after {

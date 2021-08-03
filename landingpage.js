@@ -10,3 +10,4 @@ let image = u(document.querySelector('img'));
 // test.onclick = () => {
 //     console.log('testing');
 // }
+

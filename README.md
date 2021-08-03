@@ -1,7 +1,7 @@
 # Wordopolis
 
 WEBSITE
-Visit the Wordopolis website at [Project explanation](https://blissful-jones-7169c4.netlify.app/) for the most up to date words!
+Visit the Wordopolis website at [https://blissful-jones-7169c4.netlify.app/](https://blissful-jones-7169c4.netlify.app/) for the most up to date words!
 
 README
 Wordopolis is an online tool used to pull random words and their corresponding definition to increase the end users vocabulary. 

@@ -1,7 +1,8 @@
-# Dictionary-API
+# Wordopolis
 
 README
-Dictionary-API is an online tool used to pull random words and their corresponding definition to increase the end users vocabulary. 
+Wordopolis is an online tool used to pull random words and their corresponding definition to increase the end users vocabulary. 
+The application was built using HTML, CSS/Bootstrap, JS and utilizing the Umbrella.JS libary. 
 
 CONTACT
 If  you have problems, questions, ideas or suggestions, please contact us by email at ()

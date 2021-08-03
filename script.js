@@ -9,13 +9,16 @@ body.appendChild(wordContainer);
 wordContainer.appendChild(word); 
 
 let headings = u(document.getElementsByClassName('title'))
-headings.html('Dictionary API');
+headings.html('WORDOPLOIS');
 
 // let user_text = u(document.getElementsByClassName('text_for_user'))
 // user_text.html('Push the button to fetch a new word!');
 
 let button_ = u(document.getElementsByClassName('button'));
-button_.html('ENTER');
+button_.html('EXPLORE NOW');
+
+let button1_ = u(document.getElementsByClassName('button1'));
+button1_.html('LAUNCH WORD');
 
 let title = u(document.getElementsByClassName('title'));
 title.html('WORDOPOLIS');

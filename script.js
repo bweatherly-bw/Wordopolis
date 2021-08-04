@@ -14,7 +14,7 @@ headings.html('WORDOPLOIS');
 // let user_text = u(document.getElementsByClassName('text_for_user'))
 // user_text.html('Push the button to fetch a new word!');
 
-let button_ = u(document.getElementsByClassName('button'));
+let button_ = u(document.getElementsByClassName('btn btn-outline-info'));
 button_.html('EXPLORE NOW');
 
 let button1_ = u(document.getElementsByClassName('button1'));
@@ -22,6 +22,11 @@ button1_.html('LAUNCH WORD');
 
 let title = u(document.getElementsByClassName('title'));
 title.html('WORDOPOLIS');
+
+function relocate_home()
+{
+     location.href = "app.html";
+} 
 
 
 // Function, randomWord is fetching the random word for the randomword API and printing to the variable word. 

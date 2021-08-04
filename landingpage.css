@@ -9,6 +9,7 @@
   --layer7: #00ADB5;
   --layer8: #EEEEEE;
   --layer9: #d92e3c;
+  --layer10: #28f39b;
 }
 img {
   max-height: 400px;
@@ -22,12 +23,7 @@ img {
     padding: 0;
     box-sizing: border-box;
   }
-  button {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: var(--layer3);
-  }
-  
+
   html {
     text-rendering: optimizeLegibility;
     line-height: 1.5em;
@@ -114,6 +110,8 @@ img {
   
   h1 {
     font-size: 3em;
+    color: var(--layer10) !important;
+
   }
   
   h2 {
@@ -122,6 +120,7 @@ img {
   
   p {
     line-height: 1.5em;
+    color: var(--layer4) !important;
   }
   
   .animations {
@@ -613,4 +612,5 @@ img {
   bottom: 0;
   width: 100%;
   height: 40px;
+  color: var(--layer4) !important;
 }
